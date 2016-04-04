@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RXn-2N-bL7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RRs-nH-ACT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="5rx-yy-dBd">
             <objects>
-                <viewController id="RRs-nH-ACT" sceneMemberID="viewController">
+                <viewController id="RRs-nH-ACT" customClass="ViewController" customModule="TwoDate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O25-Gp-oXw"/>
                         <viewControllerLayoutGuide type="bottom" id="NUM-bn-Mgg"/>
@@ -25,23 +25,26 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-uB-5Iw">
-                                <rect key="frame" x="196" y="461" width="208" height="33"/>
+                                <rect key="frame" x="196" y="506" width="208" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="208" id="4nX-20-UhG"/>
                                     <constraint firstAttribute="height" constant="33" id="58l-wD-r1m"/>
                                 </constraints>
                                 <state key="normal" image="btn-login"/>
+                                <connections>
+                                    <segue destination="RXn-2N-bL7" kind="show" id="9rc-fh-oDY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYQ-o2-PI7">
-                                <rect key="frame" x="196" y="515" width="208" height="33"/>
+                                <rect key="frame" x="196" y="550" width="208" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="208" id="I4f-fv-qzu"/>
                                     <constraint firstAttribute="height" constant="33" id="ivr-R8-R1N"/>
                                 </constraints>
                                 <state key="normal" image="btn-sign-up"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ol6-Ks-GbU">
-                                <rect key="frame" x="150" y="407" width="330" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ol6-Ks-GbU">
+                                <rect key="frame" x="150" y="332" width="330" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Quk-AY-7S4"/>
                                     <constraint firstAttribute="width" constant="330" id="cuM-JG-fmw"/>
@@ -50,8 +53,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tmm-PW-bAU">
-                                <rect key="frame" x="150" y="369" width="330" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tmm-PW-bAU">
+                                <rect key="frame" x="150" y="294" width="330" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Bry-p4-lu5"/>
                                     <constraint firstAttribute="width" constant="330" id="kad-4K-n1a"/>
@@ -59,30 +62,68 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="take-photo" translatesAutoresizingMaskIntoConstraints="NO" id="Xpp-6e-Cgk">
-                                <rect key="frame" x="236" y="206" width="129" height="147"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="take-photo" translatesAutoresizingMaskIntoConstraints="NO" id="Xpp-6e-Cgk">
+                                <rect key="frame" x="236" y="122" width="129" height="147"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="147" id="Cj1-gq-o9v"/>
                                     <constraint firstAttribute="width" constant="129" id="pgx-z5-l8M"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRj-az-WM7">
+                                <rect key="frame" x="196" y="416" width="82" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="SU9-Ke-aW8"/>
+                                    <constraint firstAttribute="width" constant="82" id="lxj-JG-aLc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="menUnchecked"/>
+                                <connections>
+                                    <action selector="menButtonTapped:" destination="RRs-nH-ACT" eventType="touchUpInside" id="lcZ-Jo-ZFt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxy-ci-x6C">
+                                <rect key="frame" x="323" y="416" width="81" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="8sZ-Md-Vy2"/>
+                                    <constraint firstAttribute="height" constant="53" id="u8V-hF-rjO"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="womenUnchecked"/>
+                                <connections>
+                                    <action selector="womenButtonTapped:" destination="RRs-nH-ACT" eventType="touchUpInside" id="VNY-3e-SYY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Show me:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBN-5N-bLH">
+                                <rect key="frame" x="150" y="393" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Ol6-Ks-GbU" firstAttribute="top" secondItem="tmm-PW-bAU" secondAttribute="bottom" constant="8" id="6PN-W0-HyS"/>
-                            <constraint firstItem="rYQ-o2-PI7" firstAttribute="top" secondItem="hQ6-uB-5Iw" secondAttribute="bottom" constant="21" id="8Sd-CX-pz6"/>
+                            <constraint firstItem="jBN-5N-bLH" firstAttribute="top" secondItem="Ol6-Ks-GbU" secondAttribute="bottom" constant="31" id="A33-7G-uvf"/>
+                            <constraint firstItem="hQ6-uB-5Iw" firstAttribute="leading" secondItem="CRj-az-WM7" secondAttribute="leading" id="C8J-3m-N3a"/>
+                            <constraint firstItem="jBN-5N-bLH" firstAttribute="leading" secondItem="Ol6-Ks-GbU" secondAttribute="leading" id="Kvj-Ur-pHN"/>
                             <constraint firstItem="FzL-rr-eZn" firstAttribute="centerX" secondItem="BtA-rG-e6K" secondAttribute="centerX" id="LZl-7e-1Sa"/>
                             <constraint firstItem="Xpp-6e-Cgk" firstAttribute="top" secondItem="FzL-rr-eZn" secondAttribute="bottom" constant="92" id="WSN-mB-Ikx"/>
+                            <constraint firstItem="Qxy-ci-x6C" firstAttribute="trailing" secondItem="hQ6-uB-5Iw" secondAttribute="trailing" id="Wvw-bQ-557"/>
                             <constraint firstItem="tmm-PW-bAU" firstAttribute="centerX" secondItem="BtA-rG-e6K" secondAttribute="centerX" constant="15" id="Xrt-an-gKM"/>
-                            <constraint firstItem="NUM-bn-Mgg" firstAttribute="top" secondItem="rYQ-o2-PI7" secondAttribute="bottom" constant="52" id="YmD-F2-RQN"/>
+                            <constraint firstItem="CRj-az-WM7" firstAttribute="top" secondItem="jBN-5N-bLH" secondAttribute="bottom" constant="2" id="YZm-Xh-Ohm"/>
+                            <constraint firstItem="Qxy-ci-x6C" firstAttribute="centerY" secondItem="CRj-az-WM7" secondAttribute="centerY" id="aRT-tj-mY6"/>
                             <constraint firstItem="FzL-rr-eZn" firstAttribute="top" secondItem="O25-Gp-oXw" secondAttribute="bottom" constant="26" id="bUy-3I-8nt"/>
                             <constraint firstItem="Xpp-6e-Cgk" firstAttribute="centerX" secondItem="BtA-rG-e6K" secondAttribute="centerX" id="eOn-dg-Fhs"/>
                             <constraint firstItem="Ol6-Ks-GbU" firstAttribute="centerX" secondItem="BtA-rG-e6K" secondAttribute="centerX" constant="15" id="fMi-dX-UOE"/>
+                            <constraint firstItem="NUM-bn-Mgg" firstAttribute="top" secondItem="rYQ-o2-PI7" secondAttribute="bottom" constant="17" id="iyt-gP-Vhf"/>
                             <constraint firstItem="hQ6-uB-5Iw" firstAttribute="centerX" secondItem="BtA-rG-e6K" secondAttribute="centerX" id="l0i-1N-LWB"/>
+                            <constraint firstItem="rYQ-o2-PI7" firstAttribute="top" secondItem="hQ6-uB-5Iw" secondAttribute="bottom" constant="11" id="q2U-cc-Wg8"/>
                             <constraint firstItem="tmm-PW-bAU" firstAttribute="top" secondItem="Xpp-6e-Cgk" secondAttribute="bottom" constant="16" id="rEn-Ci-Qxn"/>
                             <constraint firstItem="rYQ-o2-PI7" firstAttribute="centerX" secondItem="BtA-rG-e6K" secondAttribute="centerX" id="viC-p9-CKA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="menButton" destination="CRj-az-WM7" id="AXA-Pv-ern"/>
+                        <outlet property="womenButton" destination="Qxy-ci-x6C" id="XZA-dN-ZqG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mL-76-2H2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +249,9 @@
         <image name="btn-login" width="382" height="61"/>
         <image name="btn-sign-up" width="382" height="61"/>
         <image name="logo" width="95" height="88"/>
+        <image name="menUnchecked" width="439" height="122"/>
         <image name="person-placeholder" width="500" height="500"/>
         <image name="take-photo" width="172" height="173"/>
+        <image name="womenUnchecked" width="878" height="244"/>
     </resources>
 </document>
