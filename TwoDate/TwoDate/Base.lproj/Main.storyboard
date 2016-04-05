@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="-450" y="14"/>
         </scene>
-        <!--View Controller-->
+        <!--PersonVC-->
         <scene sceneID="GzV-Gz-9hf">
             <objects>
-                <viewController storyboardIdentifier="mainViewController" id="RXn-2N-bL7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainViewController" id="RXn-2N-bL7" customClass="PersonVC" customModule="TwoDate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IK7-eN-nch"/>
                         <viewControllerLayoutGuide type="bottom" id="I97-Om-ywn"/>
@@ -133,15 +133,8 @@
                                 </constraints>
                                 <state key="normal" image="btn-check"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xoh-CC-asf">
-                                <rect key="frame" x="176" y="45" width="252" height="305"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="305" id="l2Y-E7-nOE"/>
-                                    <constraint firstAttribute="width" constant="252" id="vcs-Wc-drB"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsI-BT-Sqs">
-                                <rect key="frame" x="176" y="344" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsI-BT-Sqs">
+                                <rect key="frame" x="176" y="344" width="20.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.079797603186078064" green="0.43241172354031371" blue="0.74547785520553589" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -158,6 +151,16 @@
                                 <color key="textColor" red="0.079797603189999997" green="0.43241172350000001" blue="0.74547785519999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xoh-CC-asf">
+                                <rect key="frame" x="176" y="45" width="252" height="305"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" allowsDirectInteraction="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="305" id="l2Y-E7-nOE"/>
+                                    <constraint firstAttribute="width" constant="252" id="vcs-Wc-drB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -178,6 +181,11 @@
                             <constraint firstItem="atb-J7-XPz" firstAttribute="bottom" secondItem="E4q-xk-Lv3" secondAttribute="bottom" id="tdv-yi-bzd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnLike" destination="atb-J7-XPz" id="Zp8-PF-MV2"/>
+                        <outlet property="btnNope" destination="E4q-xk-Lv3" id="YQ6-LS-Tkj"/>
+                        <outlet property="personPlaceHolder" destination="xoh-CC-asf" id="Nr7-ZX-cvn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Qn-H6-4Dk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
