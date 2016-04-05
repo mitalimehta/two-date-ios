@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SlideMenuControllerSwift
+//import SlideMenuControllerSwift
 import Alamofire
 
 class ViewController: UIViewController {
@@ -105,6 +105,12 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         
+    }
+    
+    @IBAction func singUP(sender: UIButton) {
+        let alertController = UIAlertController(title: "Error", message: "This option is not available", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
