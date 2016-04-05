@@ -13,6 +13,9 @@ class PersonVC: UIViewController {
     
     var choice: String = ""
     
+    var people = [Person]()
+
+    
     @IBOutlet weak var personPlaceHolder: UIImageView!
     
     @IBOutlet weak var btnNope: UIButton!
@@ -40,7 +43,6 @@ class PersonVC: UIViewController {
                         return
                 }
                 
-                var people = [Person]()
                 
                 for peopleDict in rows {
                     
@@ -50,7 +52,7 @@ class PersonVC: UIViewController {
                     person.married   = peopleDict["married"] as! Bool
                     person.name      = peopleDict["name"] as! String
                     
-                    people.append(person)
+                    self.people.append(person)
                 }
                 
                 // print("\(response)")
