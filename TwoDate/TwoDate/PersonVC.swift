@@ -14,7 +14,7 @@ class PersonVC: UIViewController {
     var choice: String = ""
     
     var people = [Person]()
-
+    var counter = 0
     
     @IBOutlet weak var personPlaceHolder: UIImageView!
     
@@ -55,6 +55,10 @@ class PersonVC: UIViewController {
                     self.people.append(person)
                 }
                 
+                
+                
+                self.updatePerson(self.people[self.counter])
+                
                 // print("\(response)")
         }
 
@@ -79,6 +83,15 @@ class PersonVC: UIViewController {
         print("End of code. The image will continue downloading in the background and it will be loaded when it ends.")
 
     }
+    
+    func updatePerson(person:Person) {
+        
+        if let checkedUrl = NSURL(string: person.img) {
+            personPlaceHolder.contentMode = .ScaleAspectFit
+            downloadImage(checkedUrl)
+        }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -87,11 +100,29 @@ class PersonVC: UIViewController {
     
     func Nope() {
         print("Swiped Left / NOPE")
+        
+        counter = counter+1
+        
+        if counter >= self.people.count {
+            counter = 0
+        }
+        
+        self.updatePerson(self.people[self.counter])
+ 
+        
+        
     }
     
     func Like() {
         print("Swiped Right / LIKE")
-
+        
+        counter = counter+1
+        
+        if counter >= self.people.count {
+            counter = 0
+        }
+        
+        self.updatePerson(self.people[self.counter])
     }
     // get the data from your url
     func getDataFromUrl(url:NSURL, completion: ((data: NSData?, response: NSURLResponse?, error: NSError? ) -> Void)) {
