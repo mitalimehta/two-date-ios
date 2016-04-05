@@ -45,6 +45,19 @@ class ViewController: UIViewController {
     
     }
     
+    var choice: String = ""
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let nextVC = segue.destinationViewController as! PersonVC
+        if preferMen == true {
+            choice = "men"
+            //do something
+        } else {
+            choice = "women"
+            //do something
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

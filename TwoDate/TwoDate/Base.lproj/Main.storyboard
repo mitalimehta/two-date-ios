@@ -32,7 +32,7 @@
                                 </constraints>
                                 <state key="normal" image="btn-login"/>
                                 <connections>
-                                    <segue destination="RXn-2N-bL7" kind="show" id="9rc-fh-oDY"/>
+                                    <segue destination="RXn-2N-bL7" kind="show" identifier="LoginSegue" id="9rc-fh-oDY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYQ-o2-PI7">
@@ -70,22 +70,24 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRj-az-WM7">
-                                <rect key="frame" x="196" y="416" width="82" height="53"/>
+                                <rect key="frame" x="196" y="416" width="85" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="SU9-Ke-aW8"/>
-                                    <constraint firstAttribute="width" constant="82" id="lxj-JG-aLc"/>
+                                    <constraint firstAttribute="height" constant="32" id="9KN-9L-ecD"/>
+                                    <constraint firstAttribute="width" constant="85" id="tuY-HM-hsU"/>
                                 </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" backgroundImage="menUnchecked"/>
                                 <connections>
                                     <action selector="menButtonTapped:" destination="RRs-nH-ACT" eventType="touchUpInside" id="lcZ-Jo-ZFt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxy-ci-x6C">
-                                <rect key="frame" x="323" y="416" width="81" height="53"/>
+                                <rect key="frame" x="319" y="416" width="85" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="81" id="8sZ-Md-Vy2"/>
-                                    <constraint firstAttribute="height" constant="53" id="u8V-hF-rjO"/>
+                                    <constraint firstAttribute="height" constant="32" id="9PD-Xn-yZZ"/>
+                                    <constraint firstAttribute="width" constant="85" id="Gvf-03-ItQ"/>
                                 </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" backgroundImage="womenUnchecked"/>
                                 <connections>
                                     <action selector="womenButtonTapped:" destination="RRs-nH-ACT" eventType="touchUpInside" id="VNY-3e-SYY"/>
