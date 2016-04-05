@@ -49,11 +49,18 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let nextVC = segue.destinationViewController as! PersonVC
         if preferMen == true {
-            choice = "men"
-            //do something
+            nextVC.choice = "men"
+        
+        } else if preferWomen == true {
+            nextVC.choice = "women"
+            
         } else {
-            choice = "women"
-            //do something
+                let alertController = UIAlertController(title: "Please select a gender to show.", message: nil, preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (UIAlertAction) in
+                    //nothing
+                }))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
     
