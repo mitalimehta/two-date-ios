@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FD77C2F1CB344430022AD51 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD77C2E1CB344430022AD51 /* Person.swift */; };
 		5436A7061CB334420087057A /* PersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436A7051CB334420087057A /* PersonVC.swift */; };
 		83EE999E1CA9F4CC002D3647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE999D1CA9F4CC002D3647 /* AppDelegate.swift */; };
 		83EE99A01CA9F4CC002D3647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE999F1CA9F4CC002D3647 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FD77C2E1CB344430022AD51 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		5436A7051CB334420087057A /* PersonVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonVC.swift; sourceTree = "<group>"; };
 		66208FC7439F78BF41F745AC /* Pods_TwoDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EE999A1CA9F4CC002D3647 /* TwoDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +75,7 @@
 		83EE999C1CA9F4CC002D3647 /* TwoDate */ = {
 			isa = PBXGroup;
 			children = (
-				C1F0C9661CB3447A0026D239 /* Person.swift */,
+				2FD77C2E1CB344430022AD51 /* Person.swift */,
 				83EE999D1CA9F4CC002D3647 /* AppDelegate.swift */,
 				83EE999F1CA9F4CC002D3647 /* ViewController.swift */,
 				5436A7051CB334420087057A /* PersonVC.swift */,
@@ -219,7 +221,7 @@
 			files = (
 				83EE99A01CA9F4CC002D3647 /* ViewController.swift in Sources */,
 				83EE999E1CA9F4CC002D3647 /* AppDelegate.swift in Sources */,
-				C1F0C9671CB3447A0026D239 /* Person.swift in Sources */,
+				2FD77C2F1CB344430022AD51 /* Person.swift in Sources */,
 				5436A7061CB334420087057A /* PersonVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
