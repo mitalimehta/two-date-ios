@@ -10,6 +10,8 @@ import UIKit
 
 class PersonVC: UIViewController {
     
+    var choice: String = ""
+    
     @IBOutlet weak var personPlaceHolder: UIImageView!
     
     @IBOutlet weak var btnNope: UIButton!
