@@ -14,13 +14,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var menButton: UIButton!
     @IBOutlet weak var womenButton: UIButton!
     
+    
     var preferMen = false
     var preferWomen = false
     
     @IBAction func menButtonTapped(sender: AnyObject) {
         if preferMen == false {
             menButton.setImage(UIImage(named: "menChecked"), forState:.Normal)
+            womenButton.setImage(UIImage(named: "womenUnchecked"), forState:.Normal)
             preferMen = true
+            preferWomen = false
         } else {
             menButton.setImage(UIImage(named: "menUnchecked"), forState:.Normal)
             preferMen = false
@@ -31,7 +34,9 @@ class ViewController: UIViewController {
     @IBAction func womenButtonTapped(sender: AnyObject) {
         if preferWomen == false {
             womenButton.setImage(UIImage(named: "womenChecked"), forState:.Normal)
+            menButton.setImage(UIImage(named: "menUnchecked"), forState:.Normal)
             preferWomen = true
+            preferMen = false
         } else {
             womenButton.setImage(UIImage(named: "womenUnchecked"), forState:.Normal)
             preferWomen = false
