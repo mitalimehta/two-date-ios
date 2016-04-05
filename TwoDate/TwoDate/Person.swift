@@ -10,6 +10,9 @@ import Foundation
 
 class Person {
     
-    var name = ""
+    var name      = ""
+    var age       = 0
+    var married   = true
+    var img       = ""
     
 }
