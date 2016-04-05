@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FD77C2F1CB344430022AD51 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD77C2E1CB344430022AD51 /* Person.swift */; };
 		5436A7061CB334420087057A /* PersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436A7051CB334420087057A /* PersonVC.swift */; };
 		83EE999E1CA9F4CC002D3647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE999D1CA9F4CC002D3647 /* AppDelegate.swift */; };
 		83EE99A01CA9F4CC002D3647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE999F1CA9F4CC002D3647 /* ViewController.swift */; };
 		83EE99A31CA9F4CC002D3647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE99A11CA9F4CC002D3647 /* Main.storyboard */; };
 		83EE99A51CA9F4CC002D3647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EE99A41CA9F4CC002D3647 /* Assets.xcassets */; };
 		83EE99A81CA9F4CC002D3647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE99A61CA9F4CC002D3647 /* LaunchScreen.storyboard */; };
+		C1F0C9671CB3447A0026D239 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0C9661CB3447A0026D239 /* Person.swift */; };
 		D02928DB265F49B80D18DD49 /* Pods_TwoDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66208FC7439F78BF41F745AC /* Pods_TwoDate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FD77C2E1CB344430022AD51 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		5436A7051CB334420087057A /* PersonVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonVC.swift; sourceTree = "<group>"; };
 		66208FC7439F78BF41F745AC /* Pods_TwoDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EE999A1CA9F4CC002D3647 /* TwoDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +29,7 @@
 		83EE99A41CA9F4CC002D3647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EE99A71CA9F4CC002D3647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83EE99A91CA9F4CC002D3647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1F0C9661CB3447A0026D239 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C5CB39BDA29E8689FDADEC7E /* Pods-TwoDate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoDate.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoDate/Pods-TwoDate.release.xcconfig"; sourceTree = "<group>"; };
 		D47FBACFF5ECB4E66D0C93E1 /* Pods-TwoDate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoDate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoDate/Pods-TwoDate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +75,7 @@
 		83EE999C1CA9F4CC002D3647 /* TwoDate */ = {
 			isa = PBXGroup;
 			children = (
+				2FD77C2E1CB344430022AD51 /* Person.swift */,
 				83EE999D1CA9F4CC002D3647 /* AppDelegate.swift */,
 				83EE999F1CA9F4CC002D3647 /* ViewController.swift */,
 				5436A7051CB334420087057A /* PersonVC.swift */,
@@ -216,6 +221,7 @@
 			files = (
 				83EE99A01CA9F4CC002D3647 /* ViewController.swift in Sources */,
 				83EE999E1CA9F4CC002D3647 /* AppDelegate.swift in Sources */,
+				2FD77C2F1CB344430022AD51 /* Person.swift in Sources */,
 				5436A7061CB334420087057A /* PersonVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
