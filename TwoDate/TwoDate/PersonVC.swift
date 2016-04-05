@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class PersonVC: UIViewController {
     
@@ -20,6 +21,41 @@ class PersonVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Alamofire.request(
+            .GET,
+            "http://bpascazio.pythonanywhere.com/2date/api/v1.0/men",
+            parameters: ["include_docs": "true"],
+            encoding: .URL)
+            .validate()
+            .responseJSON { (response) -> Void in
+                guard response.result.isSuccess else {
+                    print("Error while fetching remote rooms: \(response.result.error)")
+                    return
+                }
+                
+                guard let value = response.result.value as? [String: AnyObject],
+                    rows = value["men"] as? [[String: AnyObject]] else {
+                        print("Malformed data received from fetchAllRooms service")
+                        return
+                }
+                
+                var people = [Person]()
+                
+                for peopleDict in rows {
+                    
+                    let person       = Person()
+                    person.age       = peopleDict["age"] as! Int
+                    person.img       = peopleDict["img"] as! String
+                    person.married   = peopleDict["married"] as! Bool
+                    person.name      = peopleDict["name"] as! String
+                    
+                    people.append(person)
+                }
+                
+                // print("\(response)")
+        }
+
         
         let swipeGestureLeft = UISwipeGestureRecognizer(target: self, action: #selector(PersonVC.Nope))
         swipeGestureLeft.direction = .Left
